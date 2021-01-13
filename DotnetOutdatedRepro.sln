@@ -3,13 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleLib", "SampleLib\SampleLib.csproj", "{BACD2FD8-06E4-48EA-9072-AF81F97CA1E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleLib", "SampleLib\SampleLib.csproj", "{BACD2FD8-06E4-48EA-9072-AF81F97CA1E1}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{08568972-7424-4623-AF8E-95E0B22140DE}"
-	ProjectSection(SolutionItems) = preProject
-		.editorconfig = .editorconfig
-		Directory.Build.props = Directory.Build.props
-	EndProjectSection
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{DD00B146-B033-49F1-A821-BBBF57E4101D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,9 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{BACD2FD8-06E4-48EA-9072-AF81F97CA1E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -36,6 +29,12 @@ Global
 		{BACD2FD8-06E4-48EA-9072-AF81F97CA1E1}.Release|x64.Build.0 = Release|Any CPU
 		{BACD2FD8-06E4-48EA-9072-AF81F97CA1E1}.Release|x86.ActiveCfg = Release|Any CPU
 		{BACD2FD8-06E4-48EA-9072-AF81F97CA1E1}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BACD2FD8-06E4-48EA-9072-AF81F97CA1E1} = {DD00B146-B033-49F1-A821-BBBF57E4101D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4C5432D8-4BD6-45F7-8022-4FA0AFA29836}
