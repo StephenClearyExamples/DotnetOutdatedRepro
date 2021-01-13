@@ -1,0 +1,27 @@
+name: Run dotnet outdated
+
+on:
+  push:
+
+env:
+  DOTNET_CLI_TELEMETRY_OPTOUT: 1
+
+jobs:
+  dotnet-outdated:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dump context
+        env:
+          CONTEXT: ${{ toJson(github) }}
+        run: |
+          echo "Context: $CONTEXT"
+
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Update nuget dependencies
+        shell: pwsh
+        run: |
+          dotnet tool update dotnet-outdated-tool
+          dotnet outdated --upgrade --no-restore
+          dotnet restore --force-evaluate
