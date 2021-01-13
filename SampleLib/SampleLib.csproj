@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <!-- 3.1.11 is available, as well as 5.0.0 -->
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.10" />
   </ItemGroup>
 
