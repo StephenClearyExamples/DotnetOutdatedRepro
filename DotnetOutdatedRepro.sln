@@ -37,4 +37,7 @@ Global
 		{BACD2FD8-06E4-48EA-9072-AF81F97CA1E1}.Release|x86.ActiveCfg = Release|Any CPU
 		{BACD2FD8-06E4-48EA-9072-AF81F97CA1E1}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C5432D8-4BD6-45F7-8022-4FA0AFA29836}
+	EndGlobalSection
 EndGlobal
